@@ -12,6 +12,7 @@ return {
       require "configs.lspconfig"
     end,
   },
+  -- :Copilot setup
   {
     "github/copilot.vim",
   },
