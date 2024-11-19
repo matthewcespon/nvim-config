@@ -10,6 +10,7 @@ if not vim.uv.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
+vim.opt.clipboard = "unnamedplus"
 
 local lazy_config = require "configs.lazy"
 
@@ -31,6 +32,9 @@ dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
 require "nvchad.autocmds"
+
+-- WSL Clipboard
+require "custom.clipboard"
 
 vim.schedule(function()
   require "mappings"
