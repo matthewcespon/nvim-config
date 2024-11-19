@@ -34,6 +34,11 @@ return {
     config = function ()
       require ("gitsigns").setup()
     vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {})
+    vim.keymap.set("n", "<leader>gr", ":Gitsigns reset_hunk<CR>", {})
+    vim.keymap.set("n", "<leader>gb", ":Gitsigns reset_buffer<CR>", {})
+    -- navigation
+    vim.keymap.set("n", "[g", ":Gitsigns prev_hunk<CR>", {})
+    vim.keymap.set("n", "]g", ":Gitsigns next_hunk<CR>", {})
     end,
   },
   {
