@@ -30,6 +30,7 @@ return {
       end
   },
   {
+    -- Gitsigns toggle_current_line_blame
     "lewis6991/gitsigns.nvim",
     config = function ()
       require ("gitsigns").setup()
